@@ -1,5 +1,5 @@
 #!name= 签到合集Cookie获取
-#!desc= 该模块适用于定时签到脚本的Cookie获取. 集成: 什么值得买、喜马拉雅、建行生活、阿里云盘、贴吧、B站、高德打车; 请在使用后手动将其禁用，以免产生不必要的MITM.
+#!desc= 该模块适用于定时签到脚本的Cookie获取. 集成: 什么值得买、喜马拉雅、建行生活、阿里云盘、贴吧、B站、高德打车、美团; 请在使用后手动将其禁用，以免产生不必要的MITM.
 #!author= LinQuiet
 #!homepage= https://github.com/LinQuiet/loon
 #!icon= https://raw.githubusercontent.com/LinQuiet/Loon/main/icons/Takanashi_Rikka.jpg
@@ -15,6 +15,6 @@ http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserI
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=10, tag=B站Cookie(APP)
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=10, tag=B站Cookie(网页)
 http-response ^https?:\/\/(m5|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, requires-body=true, timeout=10, tag=高德打车Cookie
-
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, tag=美团获取Cookie
 [MITM]
-hostname = user-api.smzdm.com, xmc.ximalaya.com, yunbusiness.ccb.com, auth.aliyundrive.com, auth.alipan.com, c.tieba.baidu.com, tiebac.baidu.com, app.bilibili.com, m.bilibili.com, m5.amap.com, dache.amap.com
+hostname = user-api.smzdm.com, xmc.ximalaya.com, yunbusiness.ccb.com, auth.aliyundrive.com, auth.alipan.com, c.tieba.baidu.com, tiebac.baidu.com, app.bilibili.com, m.bilibili.com, m5.amap.com, dache.amap.com, i.meituan.com
