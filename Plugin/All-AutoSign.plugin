@@ -1,13 +1,16 @@
 #!name= 签到合集(LinQuiet)
-#!desc= 什么值得买、喜马拉雅、B站、贴吧、建行生活、高德打车、阿里云盘
+#!desc= 什么值得买、喜马拉雅、建行生活、阿里云盘、贴吧、B站、高德打车
 #!openUrl=https://github.com/LinQuiet/loon
 #!author= LinQuiet
 #!homepage= https://github.com/LinQuiet/loon
-#!icon= https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm.png
+#!icon= https://raw.githubusercontent.com/LinQuiet/Loon/main/icons/Takanashi_Rikka.jpg
 
 [Script]
-http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,tag=什么值得买_获取Cookie
-cron "5 10 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,timeout=60,tag=什么值得买_每日签到
 
-[MITM]
-hostname = user-api.smzdm.com
+cron "5 7 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,timeout=60,tag=什么值得买签到
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,timeout=60,tag=喜马拉雅签到
+cron "15 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,timeout=60,tag=建行生活签到
+cron "20 7 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js,timeout=60,tag=阿里云签到
+cron "25 7 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=60, tag=贴吧签到
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=300, tag=B站每日等级任务
+cron "35 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, timeout=300, tag=高德打车签到
