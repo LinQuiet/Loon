@@ -1,0 +1,13 @@
+#!name= 签到合集(LinQuiet)
+#!desc= 什么值得买、喜马拉雅、B站、贴吧、建行生活、高德打车、阿里云盘
+#!openUrl=https://github.com/LinQuiet/loon
+#!author= LinQuiet
+#!homepage= https://github.com/LinQuiet/loon
+#!icon= https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm.png
+
+[Script]
+http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,tag=什么值得买_获取Cookie
+cron "5 10 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,timeout=60,tag=什么值得买_每日签到
+
+[MITM]
+hostname = user-api.smzdm.com
