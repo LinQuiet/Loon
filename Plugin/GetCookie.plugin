@@ -1,6 +1,5 @@
 #!name= 签到合集Cookie获取(LinQuiet)
 #!desc= 该模块适用于定时签到脚本的Cookie获取. 集成: 什么值得买、喜马拉雅、建行生活、阿里云盘、贴吧、B站、高德打车; 请在使用后手动将其禁用，以免产生不必要的MITM.
-#!openUrl=https://github.com/LinQuiet/loon
 #!author= LinQuiet
 #!homepage= https://github.com/LinQuiet/loon
 #!icon= https://raw.githubusercontent.com/LinQuiet/Loon/main/icons/Takanashi_Rikka.jpg
