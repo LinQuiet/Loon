@@ -15,7 +15,7 @@ http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserI
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站Cookie(APP)
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站Cookie(网页)
 http-response ^https?:\/\/(m5|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js,tag=高德打车Cookie
-
+http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/Semporia/Quantumult-X/master/scripts/10000/10000.cookie.js, tag=电信营业厅Cookie
 
 [MITM]
-hostname = user-api.smzdm.com, xmc.ximalaya.com, yunbusiness.ccb.com, auth.aliyundrive.com, auth.alipan.com, c.tieba.baidu.com, tiebac.baidu.com, app.bilibili.com, m.bilibili.com, m5.amap.com, dache.amap.com
+hostname = user-api.smzdm.com, xmc.ximalaya.com, yunbusiness.ccb.com, auth.aliyundrive.com, auth.alipan.com, c.tieba.baidu.com, tiebac.baidu.com, app.bilibili.com, m.bilibili.com, m5.amap.com, dache.amap.com, wapside.189.cn:9001
