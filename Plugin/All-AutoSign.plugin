@@ -12,4 +12,4 @@ cron "20 7,12,18 * * *" script-path=https://gist.githubusercontent.com/Sliverkis
 cron "00 8 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=60, tag=贴吧_每日签到
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=60, tag=B站每日等级任务
 cron "35 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/amap.js, timeout=60, tag=高德打车签到
-
+cron "25 7 * * *" script-path=https://raw.githubusercontent.com/Semporia/Quantumult-X/master/scripts/10000/10000.js, timeout=60, tag=电信签到
