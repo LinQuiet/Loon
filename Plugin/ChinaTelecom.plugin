@@ -5,6 +5,6 @@
 #!icon= https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/dianxin.png
 
 [Script]
-http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, tag=电信小组件登录地址获取
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, requires-body=true, timeout=60, tag=电信小组件登录地址获取
 [MITM]
 hostname = e.dlife.cn
