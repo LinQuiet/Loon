@@ -2,7 +2,7 @@
 #!desc = Scriptable小组件数据更新接口
 #!openUrl = https://boxjs.com/#/app/yuheng.95598.web
 
-#!icon= https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/wangshangguowang.png
+#!icon= https://raw.githubusercontent.com/LinQuiet/Loon/main/icons/SGCC.png
 
 [Script]
 http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js, requires-body=true, timeout=60, tag=网上国网小组件获取
